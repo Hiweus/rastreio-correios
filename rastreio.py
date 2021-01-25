@@ -11,7 +11,6 @@ if len(sys.argv) < 2:
 codigo = sys.argv[1]
 
 s = Session()
-s.get("https://www2.correios.com.br/sistemas/rastreamento/default.cfm")
 
 response = s.post("https://www2.correios.com.br/sistemas/rastreamento/ctrl/ctrlRastreamento.cfm?", data={
     "acao": "track",
